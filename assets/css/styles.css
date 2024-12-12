@@ -179,6 +179,13 @@ main{
       line-height: 16px;
   }
   
+  .login-button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: var(--font-weight-medium);
+    font-size: 15px;
+  }
 
   .links{
     display: flex;

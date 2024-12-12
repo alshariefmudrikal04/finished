@@ -1,30 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const headerElement = document.querySelector("header");
-  
-    if (!headerElement) {
-      console.error("Header placeholder not found.");
-      return;
-    }
-  
-    console.log("Attempting to load header from fetch...");
-  
-    fetch("../partials/header.html")
-      .then(response => {
-        console.log("Response status: ", response.status);
-        if (!response.ok) {
-          throw new Error(`Network error: ${response.status}`);
-        }
-        return response.text();
-      })
-      .then(html => {
-        headerElement.innerHTML = html;
-        console.log("Header HTML loaded successfully.");
-      })
-      .catch(error => {
-        console.error("Error loading header:", error);
-      });
-  });
-  
+  const headerElement = document.querySelector("header");
+
+  if (!headerElement) {
+    console.error("Header placeholder not found.");
+    return;
+  }
+
+  console.log("Attempting to load header from fetch...");
+
+  fetch("../partials/header.html")
+    .then(response => {
+      console.log("Response status: ", response.status);
+      if (!response.ok) {
+        throw new Error(`Network error: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(html => {
+      console.log("HTML fetched successfully:", html);
+      headerElement.innerHTML = html;
+      console.log("Header rendered in DOM.");
+    })
+    .catch(error => {
+      console.error("Error loading header:", error);
+    });
+});
+
 
   /* FOR NAVIGATING */
 

@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       forgotPasswordLink.addEventListener("click", (e) => {
         e.preventDefault();
         console.log("Navigating to Forgot Password...");
-        window.location.href = "/views/forgot-password/forgot-password.html";
+        window.location.href = "/views/forgotpassword/fg.html";
       });
     }
   

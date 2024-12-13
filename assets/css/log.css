@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;500;600&display=swap');
+
+:root {
+    --primary-color: #FF4444;
+    --secondary-color: #ffffff;
+    --primary-font-size: 28px;
+    --secondary-font-size: 22px;
+    --font-family-ibm-plex: "IBM Plex Sans", sans-serif;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"IBM Plex Sans", sans-serif; ;
+}
+
+
+
+
+
+.header{
+    display: flex;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid red;
+    padding: 0px 10px 0px 0px;
+    align-items: center;
+}
+
+.logo{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.logo h1{
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--primary-font-size);
+}
+
+
+
+.box::placeholder{
+    font-size: 17px;
+    font-weight: var(--font-weight-light);
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 4px 8px;
+    margin: 10px 10px;
+    width: 400px;
+    height: 40px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: var(--font-weight-light);
+  
+  }
+  .search-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }  
+  .search-box img {
+    width: 20px; /* Size of the icon */
+    height: 20px;
+  }
+
+.create-new button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 16px;
+    padding: 6px 14px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    gap: 30px;
+  
+}
+.navigation a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: var(--font-weight-medium);
+    align-items: center;
+}
+
+.navigation a img {
+    width: 30px; /* Adjust size of icons */
+    height: 30px;
+    margin-right: 8px; /* Space between image and text */
+  }
+
+
+
+main{
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+}
